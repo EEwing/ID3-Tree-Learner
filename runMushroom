@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$1" = "-gdb" ]; then
+    gdb --args ./id3 mushrooms/agaricuslepiotatrain1.csv mushrooms/agaricuslepiotatest1.csv out.model
+    #gdb --args ./id3 data_sets1/training_set.csv data_sets1/test_set.csv out.model
+else
+    ./id3 mushrooms/agaricuslepiotatrain1.csv mushrooms/agaricuslepiotatest1.csv out.model
+    #./id3 data_sets1/training_set.csv data_sets1/test_set.csv out.model
+fi

@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ "$1" = "-gdb" ]; then
+    gdb --args ./id3 data_sets2/training_set.csv data_sets2/test_set.csv out.model
+else
+    ./id3 data_sets2/training_set.csv data_sets2/test_set.csv out.model
+fi
